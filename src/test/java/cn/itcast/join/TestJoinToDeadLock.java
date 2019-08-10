@@ -35,9 +35,5 @@ public class TestJoinToDeadLock {
 		
 		ct1.start();
 		ct2.start();
-		
-		// 防止主线程结束，直接强制关闭 ct1 和 ct2
-		ct1.join();
-		ct2.join();
 	}
 }
